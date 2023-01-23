@@ -1,0 +1,75 @@
+{
+    "data": {
+        "light": {
+            "id": "T_001",
+            "name": "Light",
+            "colors" : {
+                
+                "mainBackground": "hsl(0, 0%, 90%)" ,
+                "toggleBackground": "hsl(0, 5%, 81%)",
+                "screenBackground": "hsl(0, 0%, 93%)",
+
+
+                "keyBackground01": "hsl(185, 42%, 37%)",
+                "keyShadow01": "hsl(185, 58%, 25%)",
+
+                "keyBackground02": "hsl(25, 98%, 40%)",
+                "keyShadow02": "hsl(25, 99%, 27%)",
+
+                "keyBackground03": "hsl(45, 7%, 89%)",
+                "keyShadow03": "hsl(35, 11%, 61%)",
+
+                "textGrayish": "hsl(60, 10%, 19%)",
+                "textWhite": "hsl(0, 0%, 100%)"
+              
+
+            }
+        },
+        "dark": {
+            "id": "T_002",
+            "name": "Dark",
+            "colors" : {
+                 
+                "mainBackground": "hsl(222, 26%, 31%)" ,
+                "toggleBackground": "hsl(223, 31%, 20%)",
+                "screenBackground": "hsl(224, 36%, 15%)",
+
+
+                "keyBackground01": "hsl(225, 21%, 49%)",
+                "keyShadow01": "hsl(224, 28%, 35%)",
+
+                "keyBackground02": "hsl(6, 63%, 50%)",
+                "keyShadow02": "hsl(6, 70%, 34%)",
+
+                "keyBackground03": "hsl(30, 25%, 89%)",
+                "keyShadow03": "hsl(28, 16%, 65%)",
+
+                "textGrayish": "hsl(221, 14%, 31%)",
+                "textWhite": "hsl(0, 0%, 100%)"
+            }
+        },
+        "violet": {
+            "id": "T_003",
+            "name": "Violet",
+            "colors" : {
+                "mainBackground": "hsl(268, 75%, 9%)" ,
+                "toggleBackground": "hsl(268, 71%, 12%)",
+                "screenBackground": "hsl(268, 71%, 12%)",
+
+
+                "keyBackground01": "hsl(281, 89%, 26%)",
+                "keyShadow01": "hsl(285, 91%, 52%)",
+
+                "keyBackground02": "hsl(176, 100%, 44%)",
+                "keyShadow02": "hsl(177, 92%, 70%)",
+
+                "keyBackground03": "hsl(268, 47%, 21%)",
+                "keyShadow03": "hsl(290, 70%, 36%)",
+
+                "textGrayish": "hsl(52, 100%, 62%)",
+                "textWhite": "hsl(0, 0%, 100%)"
+            }
+
+        }
+    }
+}

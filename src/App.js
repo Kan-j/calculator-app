@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from "./styles/GlobalStyles";
+import KeyPadCover from "./components/KeyPadCover";
+import Container from "./styles/Container.Styled";
+import Screen from "./components/Screen";
+import Header from "./components/Header";
+import { setToLS } from "./Utils/storage";
+import * as themes from "./Themes/themes.json"
+import { ThemeProvider } from "styled-components";
+import { useTheme } from "./Themes/useTheme";
+import { useEffect, useState } from "react";
+
 
 function App() {
+  setToLS("all-themes", themes.default);
+
+  const { theme, themeLoaded } = useTheme();
+  const [selectedTheme, setSelectedTheme] = useState(theme);
+
+
+  useEffect(()=> {
+    setSelectedTheme(theme);
+  }, [themeLoaded]);
+
+  
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    <>
+      {
+        
+          themeLoaded &&
+          
+          <ThemeProvider theme={selectedTheme}>
+          <Container>
+          <GlobalStyles />
+          <Header></Header>
+          <Screen></Screen>
+          <KeyPadCover></KeyPadCover>
+        </Container>
+        </ThemeProvider>
+     
+      }
+      
+      </>
+  );    
 }
 
 export default App;
