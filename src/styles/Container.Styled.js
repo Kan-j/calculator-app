@@ -7,6 +7,9 @@ const Container = styled.div`
     /* background-color: #455441; */
     height: 90vh;
 
+    @media (min-width : 340px){
+        max-width: 330px;
+    }
     @media (min-width : 360px){
         max-width: 335px;
     }
