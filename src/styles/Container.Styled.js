@@ -8,10 +8,10 @@ const Container = styled.div`
     height: 90vh;
 
     @media (min-width : 360px){
-        max-width: 340px;
+        max-width: 335px;
     }
     @media (min-width : 375px){
-        max-width: 360px;
+        max-width: 350px;
     }
     @media (min-width : 400px){
         max-width: 390px;
