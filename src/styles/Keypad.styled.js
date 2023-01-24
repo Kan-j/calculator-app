@@ -54,7 +54,32 @@ export const StyledKeyPad = styled.button`
     cursor: pointer;
 
     &:hover{
-        background-color : hsl(0, 0%, 100%);
+        background-color: ${({ theme, change , equal}) => {
+            if (change) {
+                if (equal) {
+                    return theme.colors.keyBackground02;
+                } else {
+                    return theme.colors.keyBackground01;
+                }
+                
+            } else {
+                return theme.colors.keyBackground03;
+            }
+}};
+        
+        box-shadow: 0px 5px 0px ${({ theme, change , equal}) => {
+    if (change) {
+        if (equal) {
+            return theme.colors.keyShadow02;
+        } else {
+            return theme.colors.keyShadow01;
+        }
+        
+    } else {
+        return theme.colors.keyShadow03;
+    }
+    }};
+    
     }
 
 `

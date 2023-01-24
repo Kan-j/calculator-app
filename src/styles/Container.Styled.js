@@ -6,6 +6,16 @@ const Container = styled.div`
     margin: 20px auto;
     /* background-color: #455441; */
     height: 90vh;
+
+    @media (min-width : 375px){
+        max-width: 360px;
+    }
+    @media (min-width : 400px){
+        max-width: 390px;
+    }
+    @media (min-width : 500px){
+        max-width: 460px;
+    }
 `
 
 export default Container
