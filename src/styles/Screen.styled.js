@@ -9,7 +9,7 @@ export const ScreenStyle = styled.h1`
     margin-bottom: 3vh;
     border: 0;
     text-align: end;
-    overflow : hidden;
+    overflow : auto;
     border-radius: 0.5rem;
     color: ${({ theme }) => {
     if (theme.name === "Dark") {
@@ -22,7 +22,12 @@ export const ScreenStyle = styled.h1`
     &:active, &:focus {
         border: none;
         outline: none;
-    }
+    };
+
+    &::-webkit-scrollbar {
+       width: 2px;
+     }
+   
     
 
 `
