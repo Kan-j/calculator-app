@@ -45,20 +45,15 @@ export const Input = styled.div`
     border: 3px solid ${({theme}) => theme.colors.toggleBackground};
     border-radius: 25px;
     background-color : ${({theme}) => theme.colors.toggleBackground};
-    input {
+    /* ThemedButton {
         height: 20px;
         width: 20px;
         appearance: none;
         border-radius: 50%;
         opacity: 0;
         background-color:  ${({theme}) => theme.colors.keyBackground02};
-    }
-    input:hover {
-        cursor: pointer;
-    }
-    input:focus {
-        outline: none;
-    }
+    } */
+    
     /* #one{
         opacity: 1;
     } */

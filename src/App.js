@@ -2,7 +2,8 @@ import GlobalStyles from "./styles/GlobalStyles";
 import KeyPadCover from "./components/KeyPadCover";
 import Container from "./styles/Container.Styled";
 import Screen from "./components/Screen";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+import ThemeSelector from "./components/Header";
 import { setToLS } from "./Utils/storage";
 import * as themes from "./Themes/themes.json"
 import { ThemeProvider } from "styled-components";
@@ -34,7 +35,8 @@ function App() {
           <ThemeProvider theme={selectedTheme}>
           <Container>
           <GlobalStyles />
-          <Header></Header>
+              {/* <Header></Header> */}
+              <ThemeSelector setter={ setSelectedTheme } />
           <Screen></Screen>
           <KeyPadCover></KeyPadCover>
         </Container>
